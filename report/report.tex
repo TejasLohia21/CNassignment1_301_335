@@ -1,0 +1,445 @@
+\documentclass[12pt, a4paper]{report}
+
+%==============================================================================
+% PACKAGES
+%==============================================================================
+\usepackage[utf8]{inputenc} % For text encoding
+\usepackage{xcolor}         % For defining custom colors
+\usepackage{tocloft} 
+\usepackage{amsmath}        % For math equations
+\usepackage{hyperref}       % For clickable links in the PDF
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage[protrusion=true,expansion=true]{microtype} % load after lmodern
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{ragged2e}
+\usepackage{parskip} % no paragraph indent, adds space
+\usepackage{caption}
+\usepackage{fancyhdr}
+\usepackage{amssymb} % For \checkmark symbol
+
+%==============================================================================
+% DOCUMENT SETUP
+%==============================================================================
+
+% Set page margins
+\geometry{a4paper, margin=1in}
+
+% Define the custom orange color from your title page image
+\definecolor{customOrange}{HTML}{D28A32}
+\definecolor{sectionbar}{HTML}{E9A640} % orange bar color similar to the image
+\definecolor{sectiontext}{HTML}{2B2B2B}
+
+% Setup for hyperref (makes ToC and references clickable)
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=blue,
+    citecolor=black
+}
+
+% Wide, colored bar style for "section-like" headers
+\newcommand{\sectionbar}[1]{%
+  \vspace{0.6\baselineskip}%
+  \noindent
+  \colorbox{sectionbar}{%
+    \parbox{\dimexpr\linewidth-2\fboxsep\relax}{%
+      \textbf{\Large\textsf{#1}}%
+    }%
+  }%
+  \vspace{0.6\baselineskip}
+}
+
+% Body text tweaks
+\setstretch{1.2}
+\setlist[itemize]{leftmargin=1.2em}
+\setlist[enumerate]{leftmargin=1.2em}
+
+% Section title spacing (not used directly since we use custom bars)
+\titlespacing*{\section}{0pt}{1ex}{0.6ex}
+
+% Figure captions smaller and tight
+\captionsetup{font=small,labelfont=bf}
+
+% Footer with page number
+\pagestyle{fancy}
+\fancyhf{}
+\cfoot{\thepage}
+
+%==============================================================================
+% BEGIN DOCUMENT
+%==============================================================================
+\begin{document}
+
+%==============================================================================
+% TITLE PAGE
+% This is a custom title page environment to replicate your image.
+%==============================================================================
+\begin{titlepage}
+    \centering
+    \vspace*{\fill} % Pushes content down vertically
+    
+    % --- Main Title ---
+    {\color{customOrange}\Huge\bfseries ASSIGNMENT 1}
+    
+    \vspace{0.75cm} % Space between title and subtitle
+    
+    % --- Subtitle ---
+    {\Large\bfseries Computer Networks}
+    
+    \vfill % Flexible vertical space
+    
+    % --- Author Info Box ---
+    % \colorbox creates the colored background
+    % \parbox creates a container for the text inside
+    \colorbox{customOrange}{%
+        \parbox{1.0\textwidth}{%
+            \centering
+            \vspace{1em} % Padding top
+            {\Large\color{white} Tejas Lohia, Umang Shikarvar} \\[0.5em] % Your name
+            {\large\color{white} 23110335, 23110301} % Your ID
+            \vspace{1em} % Padding bottom
+        }
+    }
+    
+    \vspace*{\fill} % Pushes the author box up from the bottom
+\end{titlepage}
+
+
+%==============================================================================
+% FRONT MATTER (Table of Contents, etc.)
+%==============================================================================
+% \pagenumbering{arabic}
+
+
+\renewcommand{\cfttoctitlefont}{\hfill} 
+\renewcommand{\cftaftertoctitle}{\hfill}
+{\noindent\colorbox{customOrange}{\parbox{\textwidth}{\vspace{0.4em}\Large\bfseries\color{white}\hspace{1em}TABLE OF CONTENTS\vspace{0.4em}}}}
+
+% --- Generate the list of contents ---
+\tableofcontents 
+
+%=================================
+%       LABORATORY SESSION 1
+%=================================
+\chapter{DNS Resolver}
+\section{Introduction}
+
+The aim of the laboratory session was to provide a hands-on introduction to version control using Git and GitHub. The activities focused on core concepts—initializing repositories, staging and committing changes, and synchronizing work—while also highlighting good practices for collaboration and project organization.
+\
+\section{Tools}
+
+\begin{itemize}
+    \item \textbf{Programming Language:} Python 3.12.9 --- Used for code and using pylint library.
+    \item \textbf{Editor/IDE:} Visual Studio Code --- Used for coding, debugging and execution.
+    \item \textbf{Version Control:} Git and GitHub --- Used to track and the changes in the code, and to improve maintainability of the codebases.
+    \item \textbf{Linting Tool:} Pylint --- Used to ensure that the code follows PEP8 standards.
+    \item \textbf{Automation Platform:} GitHub Actions --- used to automate the linting workflow and provide continuous integration (CI) feedback.
+    \item \textbf{Virtual Environment:} venv --- To prevent library version conflicts by isolating working environments.
+\end{itemize}
+
+\
+\section{Setup}
+
+To configure GitHub for this project, I had to setup git on my machine and Visual Studio Code (VS Code) as the code editor. For github setup I had to sign up using email ID and password;
+\newline 
+To maintain isolated coding environment, created a new vevn \textbf{lab1} with python version \textbf{3.12.9}.
+
+\
+\section{Methodology and Execution}
+
+The following methodology was followed execute tasks.
+\subsection*{Part A: Initial Compilation and Git Setup}
+
+\begin{enumerate}
+    \item \textbf{Git initialization:}
+    \begin{itemize}
+        \item Installed git on MacOS, and checked git version:
+        \begin{verbatim}
+        git --version
+        \end{verbatim}
+    \end{itemize}
+
+    \item \textbf{Version Control Initialization:}
+    \begin{itemize}
+        \item Configured Git global username and email:
+        \begin{verbatim}
+        git config --global user.name "TejasLohia21"
+        git config --global user.email 23110335@iitgn.ac.in
+        \end{verbatim}
+
+        \item Verified configurations:
+        \begin{verbatim}
+        git config --list
+        git config user.name
+        git config user.email
+        \end{verbatim}
+    \end{itemize}
+
+    \item \textbf{Repository Setup in a New Folder:}
+    \begin{itemize}
+        \item A new folder named \texttt{testing\_lab1} was created and entered:
+        \begin{verbatim}
+        cd testing_lab1
+        \end{verbatim}
+
+        \item A Git repository was initialized inside the folder:
+        \begin{verbatim}
+        git init
+        \end{verbatim}
+
+        \item A \texttt{README.md} file was created and initialized with content:
+        \begin{verbatim}
+        echo "# read_test" > README.md
+        \end{verbatim}
+
+        \item The file was staged and committed with a message:
+        \begin{verbatim}
+        git add README.md
+        git commit -m "add readme"
+        \end{verbatim}
+    \end{itemize}
+
+    \item \textbf{Repository Setup in a New Folder:}
+        \begin{itemize}
+            \item A new folder named \texttt{testing\_lab1} was created and entered:
+            \begin{verbatim}
+            cd testing_lab1
+            \end{verbatim}
+
+            \item A Git repository was initialized inside the folder:
+            \begin{verbatim}
+            git init
+            \end{verbatim}
+
+            \item A \texttt{README.md} file was created and initialized with content:
+            \begin{verbatim}
+            echo "# read_test" > README.md
+            \end{verbatim}
+
+            \item The file was staged and committed with a message:
+            \begin{verbatim}
+            git add README.md
+            git commit -m "add readme"
+            \end{verbatim}
+        \end{itemize}
+
+
+    \item \textbf{Pushing Code to GitHub:}
+    \begin{itemize}
+        \item The local commits were pushed to the remote repository using:
+        \begin{verbatim}
+        git push -u origin main
+        \end{verbatim}
+        \item The \texttt{-u} flag sets the upstream branch so that subsequent pushes can simply use \texttt{git push}.
+    \end{itemize}
+
+    \item \textbf{Checking Commit History:}
+    \begin{itemize}
+        \item The commit history was viewed using:
+            \begin{verbatim}
+            git log
+            \end{verbatim}
+
+        \item Output:
+        \begin{verbatim}
+        commit 7e4d7da93c58274df903e73f653de9e9fe8e84fb (HEAD -> main)
+        Author: TejasLohia21 <23110335@iitgn.ac.in>
+        Date:   Sat Sep 6 01:00:00 2025 +0530
+
+            add readme
+        \end{verbatim}
+    \end{itemize}
+
+\end{enumerate}
+ 
+\subsection*{Part C: Working with Remote Repositories}
+
+\begin{enumerate}
+    \item \textbf{Connecting to GitHub:}
+    \begin{itemize}
+        \item A new repository was created on GitHub named \texttt{TejasLohialab1}.
+        \item The local repository was linked to GitHub using:
+        \begin{verbatim}
+        git remote add origin git@github.com:TejasLohia21/TejasLohialab1.git
+        git branch -M main
+        git push -u origin main
+        \end{verbatim}
+    \end{itemize}
+
+    \item \textbf{Pushing Changes to GitHub:}
+    \begin{itemize}
+        \item The committed changes were pushed to GitHub using:
+        \begin{verbatim}
+        git push -u origin main
+        \end{verbatim}
+    \end{itemize}
+
+    \item \textbf{Cloning a Repository:}
+    \begin{itemize}
+        \item An existing repository was cloned from GitHub to the local machine using:
+        \begin{verbatim}
+        git clone git@github.com:TejasLohia21/datascience-HNSW.git
+        \end{verbatim}
+    \end{itemize}
+
+    \item \textbf{Pulling Changes:}
+    \begin{itemize}
+        \item Updates from the remote repository were pulled using:
+        \begin{verbatim}
+        git pull origin main
+        \end{verbatim}
+    \end{itemize}
+\end{enumerate}
+
+\subsection*{Part D: Setting up Pylint Workflow with GitHub Actions}
+
+In this part, a continuous integration (CI) workflow was created using \textbf{GitHub Actions} to automatically check the Python code using \texttt{pylint}. The steps followed were:
+
+\begin{enumerate}
+    \item \textbf{Python Script Creation:}  
+    A Python file \texttt{code.py} was created with more than 30 lines of code. The script implemented functions for factorial calculation, Fibonacci sequence generation, and prime number detection.
+
+    \item \textbf{Workflow Configuration:}  
+    A workflow file was created at the path:
+    \begin{verbatim}
+    .github/workflows/pylint.yml
+    \end{verbatim}
+
+    The content of the workflow file is shown below:
+    \begin{verbatim}
+    name: Pylint Check
+
+    on: [push, pull_request]
+
+    jobs:
+      lint:
+        runs-on: ubuntu-latest
+        steps:
+          - name: Checkout repository
+            uses: actions/checkout@v2
+
+          - name: Set up Python
+            uses: actions/setup-python@v2
+            with:
+              python-version: '3.12'
+
+          - name: Install dependencies
+            run: |
+              python -m pip install --upgrade pip
+              pip install pylint
+
+          - name: Run pylint
+            run: |
+              pylint code.py
+    \end{verbatim}
+
+    \item \textbf{Commit and Push:}  
+    The workflow file and the Python script were staged, committed, and pushed to the GitHub repository:
+    \begin{verbatim}
+    git add main.py .github/workflows/pylint.yml
+    git commit -m "Add Python script and pylint workflow"
+    git push
+    \end{verbatim}
+
+    \item \textbf{Verification:}  
+    After pushing, the GitHub Actions workflow was triggered. The Python script was linted using \texttt{pylint}, and all errors were resolved until a green tick (\checkmark) appeared, confirming successful execution.
+\end{enumerate}
+This ensured that the code followed Python coding standards and passed linting checks automatically on every push.
+
+
+\
+\section{Results and Analysis}
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.7\textwidth]{/Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 00.58.32 (1).jpeg}
+    \caption{Setting up git}
+    \label{fig:lab1}
+\end{figure}
+
+Commands to check the version and verify initialization gave the following outputs.
+
+\begin{itemize}
+    \item {Git version initialized:} 2.39.5 (Apple Git - 154)
+    \item {Git username:} TejasLohia21
+    \item {Git user email:} 23110335@iitgn.ac.in
+\end{itemize}
+
+
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.7\textwidth]{/Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 01.00.08 (1).jpeg}
+    \caption{Init git Repo and addition of README file}
+    \label{fig:lab2}
+\end{figure}
+
+Upon committing the staged files in the main branch of the initialized local git repository:
+\begin{verbatim}
+    [main (root-commit) 7e4d7da] add readme
+    1 file changed, 1 insertion(+)
+    create mode 100644 README.md
+\end{verbatim}
+
+\newpage
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.7\textwidth]{/Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 01.00.55.jpeg}
+    \caption{Checking commit history}
+    \label{fig:lab3}
+\end{figure}
+
+Command git log generated the commit history along with Metadata.
+
+\begin{verbatim}
+    Author: TejasLohia21 <23110335@iitgn.ac.in>
+    Date: Sat Sep 6 01:00:00 2025 +530
+
+        add readme
+\end{verbatim}
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.7\textwidth]{/Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 01.02.35.jpeg}
+    \caption{Linking local repositories with github}
+    \label{fig:lab4}
+\end{figure}
+
+Created a new repository on github named lab1. Using the command, the local repository was linked to Online Repo.
+The repository was then pushed to the online repository on github in the main branch.
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.7\textwidth]{/Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 01.04.44.jpeg}
+    \caption{Cloning existing repositories and initiating pull}
+    \label{fig:lab5}
+\end{figure}
+
+To get a hands on experience of pulling repositories, I cloned an existing repository and pulled that. As the repository did not have any changes, the output was 'Already upto date'.
+
+\newpage
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.7\textwidth]{/Users/tejasmacipad/Downloads/WhatsApp Image 2025-09-06 at 02.48.19.jpeg}
+    \caption{Pylint workflow}
+    \label{fig:lab6}
+\end{figure}
+
+Initially there was a cross mark after pushing to the online repository. THe error was because of no blank empty line in the end.
+\newline
+After rectifying this, there was a tick symbol in the github repository.
+
+\section{Discussion and Conclusion}
+This lab was quite important to understand and learn git in a systematic way. It introduced us to the very basics of git init, till using github workflows, making us familiar to use and maintain repositories using git and github.
+
+
+
+
+\end{document}
