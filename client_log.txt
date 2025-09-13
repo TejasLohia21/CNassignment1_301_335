@@ -1,0 +1,24 @@
+22521700 | _apple-mobdev._tcp.local. | 192.168.1.11
+22521701 | _apple-mobdev._tcp.local. | 192.168.1.12
+22521702 | linkedin.com. | 192.168.1.13
+22521703 | reddit.com. | 192.168.1.14
+22521704 | facebook.com. | 192.168.1.15
+22521705 | Brother MFC-7860DW._pdl-datastream._tcp.local. | 192.168.1.11
+22521706 | Brother MFC-7860DW._pdl-datastream._tcp.local. | 192.168.1.12
+22521707 | bing.com. | 192.168.1.13
+22521708 | Brother MFC-7860DW._pdl-datastream._tcp.local. | 192.168.1.14
+22521709 | Brother MFC-7860DW._pdl-datastream._tcp.local. | 192.168.1.15
+22521710 | example.com. | 192.168.1.11
+22521711 | _apple-mobdev._tcp.local. | 192.168.1.12
+22521712 | Brother MFC-7860DW._pdl-datastream._tcp.local. | 192.168.1.13
+22521713 | Brother MFC-7860DW._pdl-datastream._tcp.local. | 192.168.1.14
+22521714 | wikipedia.org. | 192.168.1.15
+22521715 | Brother MFC-7860DW._pdl-datastream._tcp.local. | 192.168.1.11
+22521716 | Brother MFC-7860DW._pdl-datastream._tcp.local. | 192.168.1.12
+22521717 | _apple-mobdev._tcp.local. | 192.168.1.13
+22521718 | _apple-mobdev._tcp.local. | 192.168.1.14
+22521719 | Brother MFC-7860DW._pdl-datastream._tcp.local. | 192.168.1.15
+22521720 | Brother MFC-7860DW._pdl-datastream._tcp.local. | 192.168.1.11
+22521721 | github.com. | 192.168.1.12
+22521722 | Brother MFC-7860DW._pdl-datastream._tcp.local. | 192.168.1.13
+22521723 | Brother MFC-7860DW._pdl-datastream._tcp.local. | 192.168.1.14
