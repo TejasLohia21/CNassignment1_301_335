@@ -11,10 +11,16 @@ def make_custom_header(index: int) -> str:
 
 def parse_dns_queries(pcap_file: str):
     """
-    Extract DNS queries from the pcap file.
+    Extract only standard DNS queries from the pcap file (skip mDNS, .local, printers).
     """
     packets = rdpcap(pcap_file)
-    dns_queries = [p for p in packets if p.haslayer(DNS) and p[DNS].qr == 0]
+    dns_queries = []
+    for p in packets:
+        if p.haslayer(DNS) and p[DNS].qr == 0 and p[DNS].qd:
+            qname = p[DNS].qd.qname.decode()
+            # filter out .local, _services, etc.
+            if not qname.endswith(".local.") and not qname.startswith("_"):
+                dns_queries.append(p)
     return dns_queries
 
 def run_client(pcap_file: str, server_host="127.0.0.1", server_port=9999):

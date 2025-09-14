@@ -65,7 +65,9 @@ def start_server(host="0.0.0.0", port=9999):
 
         try:
             dns_pkt = DNS(dns_data)
-            qname = dns_pkt[DNS].qd.qname.decode()
+            qname = dns_pkt.qd.qname.decode() if dns_pkt.qd else ""
+            if qname.endswith(".local.") or qname.startswith("_"):
+                continue  # skip mDNS / Bonjour
 
             resolved_ip = resolve_ip(header)
 
