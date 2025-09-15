@@ -21,6 +21,7 @@
 \usepackage{caption}
 \usepackage{fancyhdr}
 \usepackage{amssymb} % For \checkmark symbol
+\usepackage{enumitem}
 
 \usepackage{listings} % for code
 
@@ -1131,5 +1132,51 @@ else value 10 is returned.
 \caption{Domain name resolution results}
 \label{tab:dns-results}
 \end{table}
+
+\chapter{Traceroute Protocol Behavior}
+
+\textbf{Q1. What protocol does Windows tracert use by default, and what protocol does Linux traceroute use by default?}
+
+\textbf{Answer:}  
+\begin{itemize}[leftmargin=*]
+    \item Windows \texttt{tracert} uses \textbf{ICMP Echo Requests} by default.
+    \item Mac/Linux \texttt{traceroute} uses \textbf{UDP probes to high ports} by default.
+\end{itemize}
+
+\textbf{Q2. Some hops in your traceroute output may show ``* * *''. Provide at least two reasons why a router might not reply.}
+
+\textbf{Answer:}  
+Possible reasons include:
+\begin{itemize}[leftmargin=*]
+    \item ICMP replies are blocked or rate-limited.  
+    \item Firewall or router policy disallows \texttt{Time Exceeded} messages.  
+\end{itemize}
+
+\textbf{Q3. In Linux traceroute, which field in the probe packets changes between successive probes sent to the destination?}
+
+\textbf{Answer:}  
+\begin{itemize}[leftmargin=*]
+    \item In Mac/Linux traceroute, the \textbf{UDP destination port field} changes (increments by 1) between successive probes.  
+\end{itemize}
+
+\textbf{Q4. At the final hop, how is the response different compared to the intermediate hop?}
+
+\textbf{Answer:}  
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Intermediate hops:} Send ICMP \texttt{Time Exceeded}.  
+    \item \textbf{Final hop:}  
+    \begin{itemize}
+        \item On Mac/Linux (UDP probes): ICMP \texttt{Destination Unreachable (Port Unreachable)}.  
+        \item On Windows (ICMP Echo probes): ICMP \texttt{Echo Reply}.  
+    \end{itemize}
+\end{itemize}
+
+\textbf{Q5. Suppose a firewall blocks UDP traffic but allows ICMP — how would this affect the results of Mac/Linux traceroute vs. Windows tracert?}
+
+\textbf{Answer:}  
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Mac/Linux (UDP-based):} Traceroute would fail because probes would never reach the destination (UDP blocked). Output would mostly show ``* * *''.  
+    \item \textbf{Windows (ICMP-based):} Would still work normally, since probes are ICMP Echo Requests and replies would come back.  
+\end{itemize}
 
 \end{document}
