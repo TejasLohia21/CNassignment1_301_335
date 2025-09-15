@@ -1,0 +1,49 @@
+Packet No 30580 DNS 53
+DNS Transaciton ID 0
+DNS FLAGS 100
+
+ Total Bytes 38 : linkedin.com
+  Bytes Sent 38 : 14 00 02 00 33 00 00 00 00 00 01 00 00 01 00 00 00 00 00 00 08 6c 69 6e 6b 65 64 69 6e 03 63 6f 6d 00 00 01 00 01 
+ Reply from server: 192.168.1.6
+Packet No 115303 DNS 53
+DNS Transaciton ID 0
+DNS FLAGS 100
+
+ Total Bytes 36 : reddit.com
+  Bytes Sent 36 : 14 00 02 00 34 00 01 00 00 00 01 00 00 01 00 00 00 00 00 00 06 72 65 64 64 69 74 03 63 6f 6d 00 00 01 00 01 
+ Reply from server: 192.168.1.7
+Packet No 140231 DNS 53
+DNS Transaciton ID 0
+DNS FLAGS 100
+
+ Total Bytes 38 : facebook.com
+  Bytes Sent 38 : 14 00 02 00 34 00 02 00 00 00 01 00 00 01 00 00 00 00 00 00 08 66 61 63 65 62 6f 6f 6b 03 63 6f 6d 00 00 01 00 01 
+ Reply from server: 192.168.1.8
+Packet No 280320 DNS 53
+DNS Transaciton ID 0
+DNS FLAGS 100
+
+ Total Bytes 34 : bing.com
+  Bytes Sent 34 : 14 00 02 00 34 00 03 00 00 00 01 00 00 01 00 00 00 00 00 00 04 62 69 6e 67 03 63 6f 6d 00 00 01 00 01 
+ Reply from server: 192.168.1.9
+Packet No 431062 DNS 53
+DNS Transaciton ID 0
+DNS FLAGS 100
+
+ Total Bytes 37 : example.com
+  Bytes Sent 37 : 14 00 02 00 34 00 04 00 00 00 01 00 00 01 00 00 00 00 00 00 07 65 78 61 6d 70 6c 65 03 63 6f 6d 00 00 01 00 01 
+ Reply from server: 192.168.1.10
+Packet No 565784 DNS 53
+DNS Transaciton ID 0
+DNS FLAGS 100
+
+ Total Bytes 39 : wikipedia.org
+  Bytes Sent 39 : 14 00 02 00 34 00 05 00 00 00 01 00 00 01 00 00 00 00 00 00 09 77 69 6b 69 70 65 64 69 61 03 6f 72 67 00 00 01 00 01 
+ Reply from server: 192.168.1.6
+Packet No 755950 DNS 53
+DNS Transaciton ID 0
+DNS FLAGS 100
+
+ Total Bytes 36 : github.com
+  Bytes Sent 36 : 14 00 02 00 35 00 06 00 00 00 01 00 00 01 00 00 00 00 00 00 06 67 69 74 68 75 62 03 63 6f 6d 00 00 01 00 01 
+ Reply from server: 192.168.1.7

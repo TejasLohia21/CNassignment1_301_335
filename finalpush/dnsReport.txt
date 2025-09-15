@@ -1,0 +1,10 @@
+	CustomHeaderFile	Domainname		Resolved IP Address
+	  (HHMMSSID)
+
+	20025100		linkedin.com		192.168.1.6
+	20025201		reddit.com		192.168.1.7
+	20025202		facebook.com		192.168.1.8
+	20025203		bing.com		192.168.1.9
+	20025204		example.com		192.168.1.10
+	20025205		wikipedia.org		192.168.1.6
+	20025306		github.com		192.168.1.7
