@@ -1140,34 +1140,54 @@ else value 10 is returned.
 \textbf{Answer:}  
 \begin{itemize}[leftmargin=*]
     \item Windows \texttt{tracert} uses \textbf{ICMP Echo Requests} by default.
+    \\
+    \includegraphics[width=1\linewidth]{images/image.png}
     \item Mac/Linux \texttt{traceroute} uses \textbf{UDP probes to high ports} by default.
+    \\
+    \includegraphics[width=1\linewidth]{images/image copy.png}
 \end{itemize}
 
 \textbf{Q2. Some hops in your traceroute output may show ``* * *''. Provide at least two reasons why a router might not reply.}
 
-\textbf{Answer:}  
+\textbf{Answer:}
+\\  
+\includegraphics[width=1\linewidth]{images/Picture 1.png}
 Possible reasons include:
 \begin{itemize}[leftmargin=*]
     \item ICMP replies are blocked or rate-limited.  
     \item Firewall or router policy disallows \texttt{Time Exceeded} messages.  
+    \item Router is overloaded and does not prioritize ICMP responses.
 \end{itemize}
 
 \textbf{Q3. In Linux traceroute, which field in the probe packets changes between successive probes sent to the destination?}
 
-\textbf{Answer:}  
-\begin{itemize}[leftmargin=*]
-    \item In Mac/Linux traceroute, the \textbf{UDP destination port field} changes (increments by 1) between successive probes.  
-\end{itemize}
+\textbf{Answer:}  In Mac/Linux traceroute, the \textbf{UDP destination port field} changes between successive probes.  
+\\
+\includegraphics[width=1\linewidth]{images/image copy 2.png}
 
 \textbf{Q4. At the final hop, how is the response different compared to the intermediate hop?}
 
 \textbf{Answer:}  
 \begin{itemize}[leftmargin=*]
-    \item \textbf{Intermediate hops:} Send ICMP \texttt{Time Exceeded}.  
+    \item \textbf{Intermediate hops:} Send ICMP \texttt{Time-to-live exceeded}.
+    \begin{itemize}
+        \item Mac/Linux (UDP probes)
+        \\
+        \includegraphics[width=1\linewidth]{images/image copy.png}
+        \\
+        \item On Windows (ICMP Echo probes)
+        \\
+        \includegraphics[width=1\linewidth]{images/image.png}
+    \end{itemize}
     \item \textbf{Final hop:}  
     \begin{itemize}
-        \item On Mac/Linux (UDP probes): ICMP \texttt{Destination Unreachable (Port Unreachable)}.  
-        \item On Windows (ICMP Echo probes): ICMP \texttt{Echo Reply}.  
+        \item On Mac/Linux (UDP probes): ICMP \texttt{Destination Unreachable (Port Unreachable)}.
+        \\
+        \includegraphics[width=1\linewidth]{images/image copy 3.png}
+        \\
+        \item On Windows (ICMP Echo probes): ICMP \texttt{Echo Reply}.
+        \\
+        \includegraphics[width=1\linewidth]{images/image copy 4.png}
     \end{itemize}
 \end{itemize}
 

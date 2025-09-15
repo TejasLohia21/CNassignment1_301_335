@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1757932863.43831 "/Users/umangshikarvar/Desktop/CNassignment1_301_335/report/report.tex" "report.pdf" "report" 1757932864.47591 0
-  "/Users/umangshikarvar/Desktop/CNassignment1_301_335/report/report.tex" 1757932863.38191 45733 e6f306fe5a9fdac878199e580bc839d1 ""
+["pdflatex"] 1757947129.88451 "/Users/umangshikarvar/Desktop/CNassignment1_301_335/report/report.tex" "report.pdf" "report" 1757947131.46869 0
+  "/Users/umangshikarvar/Desktop/CNassignment1_301_335/report/report.tex" 1757947129.67904 46445 8a4df5d526c817ba92d963968d00d17f ""
   "/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1741388039 2375 baa924870cfb487815765f9094cf3728 ""
   "/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc" 1741388039 3031 6c4d3515bf7115d8518af1c9ab97ca44 ""
   "/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/map/fontname/texfonts.map" 1741388039 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -126,10 +126,16 @@
   "/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/xcolor/xcolor.sty" 1741388039 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/web2c/texmf.cnf" 1741388039 42151 79f67285bdd95beca4d137b380b4b9e5 ""
   "/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-var/web2c/pdftex/pdflatex.fmt" 1741388039 3346141 1288109d02d1c772df65535881471649 ""
-  "report.aux" 1757932864.38859 5143 54b151aebc3aacafa2b313c45642111c "pdflatex"
-  "report.out" 1757932864.38946 2158 c93b3afd62f6f014991d536f4da24f11 "pdflatex"
-  "report.tex" 1757932863.38191 45733 e6f306fe5a9fdac878199e580bc839d1 ""
-  "report.toc" 1757932864.3897 1169 7164f96f7b6ca42d829137f70aa6b55d "pdflatex"
+  "images/Picture 1.png" 1757945382.6331 171389 29a4cee88b55c04f949cb68020258b89 ""
+  "images/image copy 2.png" 1757946395.94206 216636 14f37d472b9c3f00e1a19cb6bb157404 ""
+  "images/image copy 3.png" 1757946922.04748 47175 c4ba0791f37ece4759e4790388a00246 ""
+  "images/image copy 4.png" 1757947123.8904 56145 1c82f5963e899bc5961c459bab3cbf42 ""
+  "images/image copy.png" 1757942315.05499 121308 0ceeb70db45c7d82f9bb3861175582f6 ""
+  "images/image.png" 1757942262.8896 177099 a38a287b38196c8cee46cd311626dc6e ""
+  "report.aux" 1757947131.3737 5143 0679b5b7e0eb6b22e960f7b66f1ba526 "pdflatex"
+  "report.out" 1757947131.37439 2158 c93b3afd62f6f014991d536f4da24f11 "pdflatex"
+  "report.tex" 1757947129.67904 46445 8a4df5d526c817ba92d963968d00d17f ""
+  "report.toc" 1757947131.37458 1169 7164f96f7b6ca42d829137f70aa6b55d "pdflatex"
   (generated)
   "report.aux"
   "report.log"

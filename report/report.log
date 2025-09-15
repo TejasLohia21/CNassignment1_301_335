@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025/Homebrew) (preloaded format=pdflatex 2025.3.15)  15 SEP 2025 16:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025/Homebrew) (preloaded format=pdflatex 2025.3.15)  15 SEP 2025 20:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -704,18 +704,70 @@ Overfull \hbox (2.5963pt too wide) in paragraph at lines 1121--1132
 
 [26]
 Chapter 2.
-
-Overfull \hbox (24.19193pt too wide) in paragraph at lines 1169--1170
-[]\T1/lmr/m/n/12 (-20) On Mac/Linux (UDP probes): ICMP \T1/lmtt/m/n/12 Destination Unreachable (Port Unreachable)\T1/lmr/m/n/12 (-20) . 
- []
-
+<images/image.png, id=754, 2344.76pt x 303.1325pt>
+File: images/image.png Graphic file (type png)
+<use images/image.png>
+Package pdftex.def Info: images/image.png  used on input line 1144.
+(pdftex.def)             Requested size: 437.95395pt x 56.61517pt.
+<images/image copy.png, id=756, 2182.1525pt x 260.975pt>
+File: images/image copy.png Graphic file (type png)
+<use images/image copy.png>
+Package pdftex.def Info: images/image copy.png  used on input line 1147.
+(pdftex.def)             Requested size: 437.95395pt x 52.37724pt.
+<images/Picture 1.png, id=757, 453.695pt x 214.8025pt>
+File: images/Picture 1.png Graphic file (type png)
+<use images/Picture 1.png>
+Package pdftex.def Info: images/Picture 1.png  used on input line 1154.
+(pdftex.def)             Requested size: 452.9679pt x 214.46109pt.
 
 
 [27
 
-]
+ <./images/image.png> <./images/image copy.png>]
+<images/image copy 2.png, id=765, 2129.9575pt x 471.7625pt>
+File: images/image copy 2.png Graphic file (type png)
+<use images/image copy 2.png>
+Package pdftex.def Info: images/image copy 2.png  used on input line 1166.
+(pdftex.def)             Requested size: 452.9679pt x 100.32558pt.
+File: images/image copy.png Graphic file (type png)
+<use images/image copy.png>
+Package pdftex.def Info: images/image copy.png  used on input line 1176.
+(pdftex.def)             Requested size: 423.85419pt x 50.68881pt.
 
-[28] (./report.aux)
+Underfull \hbox (badness 10000) in paragraph at lines 1174--1178
+
+ []
+
+File: images/image.png Graphic file (type png)
+<use images/image.png>
+Package pdftex.def Info: images/image.png  used on input line 1180.
+(pdftex.def)             Requested size: 423.85419pt x 54.79276pt.
+
+
+[28 <./images/Picture 1.png> <./images/image copy 2.png>]
+<images/image copy 3.png, id=772, 1860.9525pt x 112.42pt>
+File: images/image copy 3.png Graphic file (type png)
+<use images/image copy 3.png>
+Package pdftex.def Info: images/image copy 3.png  used on input line 1186.
+(pdftex.def)             Requested size: 423.85419pt x 25.60388pt.
+
+Overfull \hbox (26.47139pt too wide) in paragraph at lines 1184--1188
+[]\T1/lmr/m/n/12 (-20) On Mac/Linux (UDP probes): ICMP \T1/lmtt/m/n/12 Destination Unreachable (Port Unreachable)\T1/lmr/m/n/12 (-20) . 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1184--1188
+
+ []
+
+<images/image copy 4.png, id=773, 2362.8275pt x 84.315pt>
+File: images/image copy 4.png Graphic file (type png)
+<use images/image copy 4.png>
+Package pdftex.def Info: images/image copy 4.png  used on input line 1190.
+(pdftex.def)             Requested size: 423.85419pt x 15.12457pt.
+
+
+[29 <./images/image copy 3.png> <./images/image copy 4.png>] (./report.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -724,18 +776,18 @@ Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: C93B3AFD62F6F014991D536F4DA24F11;2158.
  ) 
 Here is how much of TeX's memory you used:
- 18732 strings out of 473190
- 297995 string characters out of 5704335
+ 18773 strings out of 473190
+ 299152 string characters out of 5704335
  1216072 words of memory out of 5000000
- 41019 multiletter control sequences out of 15000+600000
- 619296 words of font info for 141 fonts, out of 8000000 for 9000
+ 41061 multiletter control sequences out of 15000+600000
+ 619205 words of font info for 140 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,12n,79p,1254b,2064s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmr12.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmr17.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmr6.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmri12.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on report.pdf (29 pages, 325405 bytes).
+Output written on report.pdf (30 pages, 841316 bytes).
 PDF statistics:
- 930 PDF objects out of 1000 (max. 8388607)
- 871 compressed objects within 9 object streams
- 593 named destinations out of 1000 (max. 500000)
- 35953 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 947 PDF objects out of 1000 (max. 8388607)
+ 875 compressed objects within 9 object streams
+ 594 named destinations out of 1000 (max. 500000)
+ 35983 words of extra memory for PDF output out of 42996 (max. 10000000)
 

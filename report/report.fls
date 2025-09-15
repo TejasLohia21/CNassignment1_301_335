@@ -254,6 +254,44 @@ INPUT /opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/tfm/public/
 INPUT /opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/tfm/public/lm/ec-lmr10.tfm
 INPUT /opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/tfm/public/lm/ec-lmbx10.tfm
 INPUT /opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/tfm/public/lm/ec-lmri12.tfm
+INPUT ./images/image.png
+INPUT ./images/image.png
+INPUT ./images/image.png
+INPUT ./images/image.png
+INPUT ./images/image.png
+INPUT ./images/image copy.png
+INPUT ./images/image copy.png
+INPUT ./images/image copy.png
+INPUT ./images/image copy.png
+INPUT ./images/image copy.png
+INPUT ./images/Picture 1.png
+INPUT ./images/Picture 1.png
+INPUT ./images/Picture 1.png
+INPUT ./images/Picture 1.png
+INPUT ./images/Picture 1.png
+INPUT ./images/image copy 2.png
+INPUT ./images/image copy 2.png
+INPUT ./images/image copy 2.png
+INPUT ./images/image copy 2.png
+INPUT ./images/image copy 2.png
+INPUT ./images/image copy.png
+INPUT ./images/image copy.png
+INPUT ./images/image copy.png
+INPUT ./images/image copy.png
+INPUT ./images/image.png
+INPUT ./images/image.png
+INPUT ./images/image.png
+INPUT ./images/image.png
+INPUT ./images/image copy 3.png
+INPUT ./images/image copy 3.png
+INPUT ./images/image copy 3.png
+INPUT ./images/image copy 3.png
+INPUT ./images/image copy 3.png
+INPUT ./images/image copy 4.png
+INPUT ./images/image copy 4.png
+INPUT ./images/image copy 4.png
+INPUT ./images/image copy 4.png
+INPUT ./images/image copy 4.png
 INPUT report.aux
 INPUT ./report.out
 INPUT ./report.out
