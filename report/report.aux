@@ -6,22 +6,36 @@
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{toc}{\contentsline {section}{\numberline {1.1}Introduction}{2}{section.1.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {1.2}Tools}{2}{section.1.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {1.3}Setup}{2}{section.1.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {1.4}Methodology and Execution}{3}{section.1.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {1.5}Results and Analysis}{7}{section.1.5}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {1.1}{\ignorespaces Setting up git}}{7}{figure.caption.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.1.1}DNS:}{2}{subsection.1.1.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.1.2}PCAP files:}{2}{subsection.1.1.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.1.3}DNS resolver:}{2}{subsection.1.1.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {1.2}Tools}{3}{section.1.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {1.3}Methodology and System Design}{3}{section.1.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.3.1}Main () function of client}{4}{subsection.1.3.1}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {1.1}{\ignorespaces Opening the files}}{4}{lstlisting.1.1}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {1.2}{\ignorespaces Creating the socket and checking the validity of the pcap file}}{5}{lstlisting.1.2}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {1.3}{\ignorespaces Iterating over the pcap file}}{6}{lstlisting.1.3}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {1.4}{\ignorespaces Processing the DNS packet, DNS querying and storing the results}}{7}{lstlisting.1.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.3.2}Packet structures and global pointers}{10}{subsection.1.3.2}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {1.5}{\ignorespaces socket, server\_addr and file pointers}}{10}{lstlisting.1.5}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {1.6}{\ignorespaces Pcap file structure and pcap file header}}{10}{lstlisting.1.6}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {1.7}{\ignorespaces Packet headers}}{11}{lstlisting.1.7}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {1.8}{\ignorespaces Ethernet Header Structure}}{12}{lstlisting.1.8}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {1.9}{\ignorespaces IPv4 Header Structure}}{12}{lstlisting.1.9}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {1.10}{\ignorespaces UDP Header Structure}}{13}{lstlisting.1.10}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {1.11}{\ignorespaces DNS Header Structure}}{13}{lstlisting.1.11}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.3.3}DNS\_custom\_header}{14}{subsection.1.3.3}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {1.12}{\ignorespaces custom DNS header structure}}{14}{lstlisting.1.12}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.3.4}Functions}{14}{subsection.1.3.4}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {1.13}{\ignorespaces create\_dns\_client\_socket}}{15}{lstlisting.1.13}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {1.14}{\ignorespaces Finding the length of the packet}}{16}{lstlisting.1.14}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {1.15}{\ignorespaces Parsing through the packet.}}{17}{lstlisting.1.15}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {1.16}{\ignorespaces copying the domain name.}}{20}{lstlisting.1.16}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {1.17}{\ignorespaces making custom packet.}}{20}{lstlisting.1.17}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {1.18}{\ignorespaces generating custom header data.}}{21}{lstlisting.1.18}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {1.4}DNS resolution server implementation}{24}{section.1.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {1.5}Logged IP Addresses.}{26}{section.1.5}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1.1}{\ignorespaces Domain name resolution results}}{26}{table.caption.1}\protected@file@percent }
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
-\newlabel{fig:lab1}{{1.1}{7}{Setting up git}{figure.caption.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {1.2}{\ignorespaces Init git Repo and addition of README file}}{7}{figure.caption.2}\protected@file@percent }
-\newlabel{fig:lab2}{{1.2}{7}{Init git Repo and addition of README file}{figure.caption.2}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {1.3}{\ignorespaces Checking commit history}}{8}{figure.caption.3}\protected@file@percent }
-\newlabel{fig:lab3}{{1.3}{8}{Checking commit history}{figure.caption.3}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {1.4}{\ignorespaces Linking local repositories with github}}{8}{figure.caption.4}\protected@file@percent }
-\newlabel{fig:lab4}{{1.4}{8}{Linking local repositories with github}{figure.caption.4}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {1.5}{\ignorespaces Cloning existing repositories and initiating pull}}{8}{figure.caption.5}\protected@file@percent }
-\newlabel{fig:lab5}{{1.5}{8}{Cloning existing repositories and initiating pull}{figure.caption.5}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {1.6}{\ignorespaces Pylint workflow}}{9}{figure.caption.6}\protected@file@percent }
-\newlabel{fig:lab6}{{1.6}{9}{Pylint workflow}{figure.caption.6}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {1.6}Discussion and Conclusion}{9}{section.1.6}\protected@file@percent }
-\gdef \@abspage@last{10}
+\newlabel{tab:dns-results}{{1.1}{26}{Domain name resolution results}{table.caption.1}{}}
+\gdef \@abspage@last{27}
